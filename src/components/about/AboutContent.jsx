@@ -1,5 +1,5 @@
 import SectionTitle from "../SectionTitle";
-import Paragraph from "./paragraph";
+import Paragraph from "./Paragraph";
 import Skills from "./Skills";
 
 export default function AboutContent() {

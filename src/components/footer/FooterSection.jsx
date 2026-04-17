@@ -1,5 +1,5 @@
 import MotionWrapper from "../motion/MotionWrapper";
-import FooterHeaders from "../../components/footer/footerHeaders";
+import FooterHeaders from "./FooterHeaders";
 
 export default function FooterSection({ title, children, ...props }) {
   return (

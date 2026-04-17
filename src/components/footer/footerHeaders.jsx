@@ -1,3 +1,3 @@
-export default function footerHeaders({title}) {
+export default function FooterHeaders({title}) {
   return <h3 className="text-xl font-bold mb-4">{title}</h3>;
 }
