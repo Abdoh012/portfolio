@@ -1,15 +1,15 @@
-import { quickLinks } from "../../data/links";
+import { navBtns } from "@/data/nav-btns";
 
 export default function QuickLinks() {
   return (
     <ul>
-      {quickLinks.map((link) => (
-        <li key={link.name} className="mb-2">
+      {navBtns.map((link) => (
+        <li key={link.link} className="">
           <a
-            href={link.href}
-            className="text-gray-400 hover:text-white transition-colors duration-300"
+            href={link.link}
+            className="inline-block origin-center hover:scale-110 transition hover:text-white mb-2 text-gray-400 capitalize cursor-pointer duration-300"
           >
-            {link.name}
+            {link.title}
           </a>
         </li>
       ))}

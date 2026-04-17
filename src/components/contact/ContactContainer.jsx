@@ -4,13 +4,9 @@ import ContactForm from "./ContactForm";
 export default function ContactContainer() {
   return (
     <div className="grid md:grid-cols-2 gap-8">
-      <div className="space-y-6">
-        <CardsContainer />
-      </div>
+      <CardsContainer />
 
-      <div>
-        <ContactForm />
-      </div>
+      <ContactForm />
     </div>
   );
 }

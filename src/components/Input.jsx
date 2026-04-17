@@ -1,9 +1,10 @@
-export default function Input({ type, placeholder, id, value }) {
+export default function Input({ type, placeholder, id, value, name }) {
   return (
     <div>
       <input
-        value={value || ""}
-        disabled={value ? true : false}
+        required
+        name={name}
+        defaultValue={value || ""}
         id={id || ""}
         type={type}
         placeholder={placeholder}

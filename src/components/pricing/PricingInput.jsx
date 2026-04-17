@@ -13,17 +13,19 @@ export default function PricingInput(input) {
         {input.label} <span>*</span>
       </label>
 
-      {input.label === "Project Details" ? (
+      {input.name === "details" ? (
         <textarea
+          name={input.name}
           id={input.id}
           placeholder={input.placeholder}
           className="placeholder:muted-text resize-none font-semibold focus:outline-none focus:ring-2 focus:ring-[#a1a1a1] bg-[#f3f3f5] rounded-md duration-300 border-0 border-input flex h-20 w-full min-w-0 px-3 py-1 outline-none disabled:pointer-events-none disabled:opacity-50 md:text-sm"
         />
       ) : (
         <Input
-          value={input.label === "Selected Plan" ? activeCard : ""}
+          value={input.name === "plan" ? activeCard : ""}
           type={input.type}
           id={input.id}
+          name={input.name}
           placeholder={input.placeholder}
         />
       )}

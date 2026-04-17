@@ -13,3 +13,18 @@ export function showSuccess(message) {
     },
   });
 }
+
+// Show error message
+export function showError(message) {
+  toast.error(message, {
+    duration: 5000,
+    position: "bottom-right",
+    closeButton: true,
+    style: {
+      backgroundColor: "#ffe6e6",
+      color: "#991B1B",
+      border: "1px solid #EF4444",
+    },
+  });
+}
+

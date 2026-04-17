@@ -2,8 +2,6 @@ import { useContext, useEffect } from "react";
 import { PricingContext } from "../context/PricingContext";
 import { motion } from "framer-motion";
 import PricingForm from "./PricingForm";
-import MainBtn from "../buttons/MainBtn";
-import ModalBtn from "./ModalBtn";
 
 const backdropAnimation = {
   initial: { opacity: 0 },
@@ -19,7 +17,7 @@ const modalAnimation = {
 };
 
 export default function Modal() {
-  const { isOpen, handleShowModal } = useContext(PricingContext);
+  const { isOpen, handleShowModal, activeCard } = useContext(PricingContext);
 
   useEffect(() => {
     if (isOpen) {
@@ -47,7 +45,7 @@ export default function Modal() {
         </div>
         <div className="flex flex-col gap-2 text-center sm:text-left mb-4">
           <h2 className="font-semibold text-2xl">
-            Get Started with Professional
+            Get Started with {activeCard}
           </h2>
 
           <p className="muted-text text-sm">
@@ -56,18 +54,6 @@ export default function Modal() {
         </div>
 
         <PricingForm />
-
-        <div className="flex  gap-3">
-          <ModalBtn
-            classes="bg-white text-black primary-border hover:bg-[#e9ebef]"
-            handleClick={handleShowModal}
-            title="Cancel"
-          />
-          <ModalBtn
-            classes="from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 border-0 hover:bg-primary/90 hover:bg-primary/90 bg-gradient-to-r text-white"
-            title="Submit Request"
-          />
-        </div>
       </motion.div>
     </motion.div>
   );

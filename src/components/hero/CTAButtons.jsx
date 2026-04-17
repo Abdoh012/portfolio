@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MainBtn from "../buttons/MainBtn";
 import { motion } from "motion/react";
-import { heroBtns } from "../../data/btns";
+import { heroBtns } from "../../data/hero-btns";
 
 export default function CTAButtons() {
   const sharedCTAStyle = "hover:scale-110 font-medium text-sm px-3 w-34 gap-1";

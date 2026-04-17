@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Link({ icon, iconStyle, link }) {
+export default function Link({ icon, link, iconStyle }) {
   const isExternalLink = link.startsWith("http") || link.startsWith("mailto");
+
   return (
     <li
-      className={`${iconStyle || ""}  hover:rotate-9 hover:scale-120 cursor-pointer duration-300`}
+      className={`hover:rotate-9 hover:scale-120 cursor-pointer duration-300 ${iconStyle || ""}`}
     >
       <a
         href={link}

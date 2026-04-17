@@ -5,6 +5,7 @@ export const pricingInputs = [
     type: "text",
     placeholder: "Your full name",
     id: "name",
+    name: "name",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const pricingInputs = [
     type: "email",
     placeholder: "your.email@example.com",
     id: "email",
+    name: "email",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const pricingInputs = [
     type: "textarea",
     placeholder: "Tell us about your project and requirements...",
     id: "project-details",
+    name: "details",
   },
   {
     id: 4,
@@ -26,5 +29,6 @@ export const pricingInputs = [
     type: "text",
     placeholder: "",
     id: "selected-plan",
+    name: "plan",
   },
 ];

@@ -1,13 +1,15 @@
 import Price from "./Price";
-import PopularBadge from "./PopularBadge ";
+import PopularBadge from "./PopularBadge";
 import PlanBenefits from "./PlanBenefits";
 import MotionWrapper from "../motion/MotionWrapper";
 import PricingButton from "./PricingButton";
-import { useState } from "react";
-import Modal from "./Modal";
+import { PricingContext } from "../context/PricingContext";
+import { useContext } from "react";
 
-export default function PricingCard({ setActiveCard, ...card }) {
-  const isActive = card.title === card.activeCard;
+export default function PricingCard({ ...card }) {
+  const { activeCard, handleSetActiveCard } = useContext(PricingContext);
+
+  const isActive = card.title === activeCard;
   const isPro = card.title === "Professional";
   const isCustom = card.price === "Custom";
 
@@ -18,7 +20,7 @@ export default function PricingCard({ setActiveCard, ...card }) {
       animation={{ y: 0 }}
       delay={card.delay}
       className={`${isActive ? card.border : "border-[#0000001a]"} relative flex flex-col p-6 bg-white rounded-xl border-2  hover:translate-y-[-10px]  hover:shadow-2xl duration-300`}
-      handleClick={() => setActiveCard(card.title)}
+      handleClick={() => handleSetActiveCard(card.title)}
     >
       {isPro && <PopularBadge />}
 

@@ -14,21 +14,24 @@ export default function ProjectCard({ live, code, ...props }) {
     >
       <div id="top" className="overflow-hidden hover:scale-105 duration-300">
         <img
+          loading="lazy"
           className="w-full h-48 object-cover"
-          src={props.image}
-          alt="Not found"
+          src={props.image.url}
+          alt={props.image.alt}
         />
       </div>
 
       <div id="bottom" className="p-6 gap-1.5 flex flex-col">
-        <h4>{props.title}</h4>
+        <h4 className="font-semibold">{props.title}</h4>
 
-        <p className="muted-text mb-5 min-h-[70px]">{props.description}</p>
+        <p className="muted-text mb-5 min-h-[120px] md:min-h-[100px]">
+          {props.description}
+        </p>
 
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2 mb-4 min-h-[50px] md:min-h-[60px]">
           {props.tools.map((tool) => (
             <span
-              className="inline-flex items-center justify-center bg-[#f2edee] capitalize rounded-md px-2 py-0.5 text-xs font-medium w-fit h-fit whitespace-nowrap  overflow-hidden border-transparent"
+              className="inline-flex  items-center justify-center bg-[#f2edee] capitalize rounded-md px-2 py-0.5 text-xs font-medium w-fit h-fit whitespace-nowrap  overflow-hidden border-transparent"
               key={tool}
             >
               {tool}

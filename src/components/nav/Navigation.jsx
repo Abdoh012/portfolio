@@ -5,7 +5,6 @@ import DesktopNavBar from "./DesktopNavBar";
 
 export default function Navigation() {
   const [showNav, setShowNav] = useState(false);
-  
 
   // Functions
   function handleShowNav() {
@@ -13,7 +12,6 @@ export default function Navigation() {
   }
   return (
     <>
-      {/* Bars */}
       <div className="md:hidden cursor-pointer">
         <FontAwesomeIcon
           onClick={handleShowNav}

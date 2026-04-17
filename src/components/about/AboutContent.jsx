@@ -2,7 +2,7 @@ import SectionTitle from "../SectionTitle";
 import Paragraph from "./paragraph";
 import Skills from "./Skills";
 
-export default function Content() {
+export default function AboutContent() {
   return (
     <div className="flex flex-col gap-3 md:flex md:justify-between md:flex-row md:gap-10">
       <SectionTitle initial={{ x: -40 }} animation={{ x: 0 }}>

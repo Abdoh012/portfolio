@@ -7,6 +7,7 @@ import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import { PricingProvider } from "./components/context/PricingContext";
+import { Toaster } from "sonner";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
       <Contact />
 
       <Footer />
+
+      <Toaster />
     </>
   );
 }

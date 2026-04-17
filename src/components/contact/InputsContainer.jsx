@@ -1,29 +1,21 @@
-import { inputs } from "../../data/inputs";
+import { inputs } from "../../data/contact-inputs";
 import { motion } from "framer-motion";
 import Input from "../Input";
 
-export default function InputsContainer() {
-  const listVariants = {
-    hidden: {},
-    show: {
-      transition: {
-        staggerChildren: 0.2,
-      },
+const listVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2,
     },
-  };
-  const itemVariants = {
-    hidden: { opacity: 0, x: -20 },
-    show: { opacity: 1, x: 0 },
-  };
+  },
+};
+const itemVariants = {
+  hidden: { opacity: 0, x: -20 },
+  show: { opacity: 1, x: 0 },
+};
 
-  const inputsCards = inputs.map((input) => {
-    return (
-      <motion.div key={input.id} variants={itemVariants}>
-        <Input type={input.type} placeholder={input.placeholder} />
-      </motion.div>
-    );
-  });
-
+export default function InputsContainer() {
   return (
     <motion.div
       variants={listVariants}
@@ -32,7 +24,15 @@ export default function InputsContainer() {
       viewport={{ once: true }}
       className="flex flex-col gap-4"
     >
-      {inputsCards}
+      {inputs.map((input) => (
+        <motion.div key={input.id} variants={itemVariants}>
+          <Input
+            type={input.type}
+            placeholder={input.placeholder}
+            name={input.name}
+          />
+        </motion.div>
+      ))}
     </motion.div>
   );
 }
