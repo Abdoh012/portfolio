@@ -1,10 +1,10 @@
 import MotionWrapper from "../motion/MotionWrapper";
-import FooterHeaders from "./FooterHeaders";
+import FooterHeader from "./FooterHeader";
 
 export default function FooterSection({ title, children, ...props }) {
   return (
     <MotionWrapper element="div" duration={0.5} {...props}>
-      <FooterHeaders title={title} />
+      <FooterHeader title={title} />
       {children}
     </MotionWrapper>
   );
