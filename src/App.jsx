@@ -8,28 +8,30 @@ import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import { PricingProvider } from "./components/context/PricingContext";
 import { Toaster } from "sonner";
+import { NavProvider } from "./components/context/NavCtx";
 
 function App() {
   return (
     <>
-      <NavBar />
+      <NavProvider>
+        <NavBar />
 
-      <Hero />
+        <Hero />
 
-      <About />
+        <About />
 
-      <Skills />
+        <Skills />
 
-      <Projects />
+        <Projects />
 
-      <PricingProvider>
-        <Pricing />
-      </PricingProvider>
+        <PricingProvider>
+          <Pricing />
+        </PricingProvider>
 
-      <Contact />
+        <Contact />
 
-      <Footer />
-
+        <Footer />
+      </NavProvider>
       <Toaster />
     </>
   );

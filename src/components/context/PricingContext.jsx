@@ -1,5 +1,3 @@
-import sendEmail from "@/data/http";
-import { showError, showSuccess } from "@/data/notifications";
 import { createContext, useState } from "react";
 import useSendReq from "../hooks/useSendReq";
 
