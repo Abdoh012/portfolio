@@ -3,7 +3,7 @@ export const subscription = [
     title: "Starter",
     titleColor: "bg-gradient-to-r from-blue-500 to-cyan-500",
     border: "border-blue-500 border-2",
-    price: 100,
+    price: 50,
     description: "Perfect for small projects and MVPs",
     button: "Get Started",
     buttonStyle:
@@ -22,7 +22,7 @@ export const subscription = [
     title: "Professional",
     titleColor: "bg-gradient-to-r from-purple-500 to-pink-500",
     border: "border-purple-500 border-2",
-    price: 200,
+    price: 100,
     description: "Ideal for growing businesses",
     button: "Get Started",
     buttonStyle:
