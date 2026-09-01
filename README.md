@@ -1,20 +1,42 @@
-<<<<<<< HEAD
-# portfolio
-=======
-# React + Vite
+# Abdelrahman Mohammed — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio built with **React**, **Vite**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+![Live](https://img.shields.io/badge/live-vercel-000?style=flat-square&logo=vercel) ![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react) ![Vite](https://img.shields.io/badge/Vite-8-646cff?style=flat-square&logo=vite) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8?style=flat-square&logo=tailwindcss) ![EmailJS](https://img.shields.io/badge/EmailJS-white?style=flat-square&logo=maildotru)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live site
 
-## React Compiler
+<https://abdoh-mohammed-portfolio.vercel.app/>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Framer Motion scroll & reveal animations
+- Dark/light theming
+- Sections: Hero, Skills, Projects, Pricing, About, Contact
+- Contact form powered by EmailJS
+- WhatsApp quick-contact link
+- Fully responsive UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> a00335e (feat: initial commit)
+## Tech stack
+
+- **React 19** + **Vite 8**
+- **Tailwind CSS v4** with `shadcn`-style components
+- **Framer Motion** for animation
+- **Font Awesome** icons
+- **EmailJS** for the contact form
+
+## Getting started
+
+```bash
+npm install
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+npm run preview
+```
+
+The contact form needs your EmailJS service keys — copy `.env.example` to `.env` and fill in the values.
