@@ -1,29 +1,15 @@
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "El-Le3ba (اللعبة)",
     description:
-      "A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.",
-    tools: ["react", "tailwind", "motion", "js"],
+      "A competitive university quiz application for BATU students. Teams compete in real-time ranked trivia matches with live leaderboards, event-based competition cycles, and a full admin dashboard.",
+    tools: ["next.js", "react", "typescript", "tailwind", "motion", "socket.io", "express", "mongodb"],
     image: {
-      url: "https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGluZ3xlbnwxfHx8fDE3NzU3MTY4NDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "E-Commerce Platform",
+      url: "/project-bg.png",
+      alt: "El-Le3ba",
     },
-    live: "",
-    code: "",
-  },
-  {
-    id: 2,
-    delay: 0.2,
-    title: "Task Management App",
-    description:
-      "A clean and simple To-Do App for organizing and tracking daily tasks. Built for productivity with an intuitive UI and smooth task management features.",
-    tools: ["react", "tailwind", "motion", "js", "react router", "react query"],
-    image: {
-      url: "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzc1NjgwOTYwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      alt: "Task Management App",
-    },
-    live: "https://andf-2dc3c.firebaseapp.com",
-    code: "https://github.com/Alita-Gaafar/to-do-app",
+    live: "https://el-le3ba.vercel.app/",
+    code: "https://github.com/AbdulrahmanSE2003/el-le3ba",
   },
 ];

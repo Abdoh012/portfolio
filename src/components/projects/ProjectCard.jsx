@@ -12,10 +12,10 @@ export default function ProjectCard({ live, code, ...props }) {
       delay={props.delay}
       className="flex flex-col gap-6 rounded-xl border overflow-hidden hover:shadow-2xl border-[#0000001a] duration-300 h-full hover:translate-y-[-10px]"
     >
-      <div id="top" className="overflow-hidden hover:scale-105 duration-300">
+      <div id="top" className="overflow-hidden hover:scale-105 duration-300 bg-[#f5f5ff] flex items-center justify-center">
         <img
           loading="lazy"
-          className="w-full h-48 object-cover"
+          className="w-full h-48 object-contain"
           src={props.image.url}
           alt={props.image.alt}
         />
