@@ -15,7 +15,9 @@ export default function ProjectCard({ live, code, ...props }) {
       <div id="top" className="overflow-hidden hover:scale-105 duration-300 bg-[#f5f5ff] flex items-center justify-center">
         <img
           loading="lazy"
-          className="w-full h-48 object-contain"
+          className={`w-full h-48 ${
+            props.image.fit === "cover" ? "object-cover" : "object-contain"
+          }`}
           src={props.image.url}
           alt={props.image.alt}
         />
