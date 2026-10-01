@@ -42,7 +42,7 @@ export const testimonials = [
       "An exceptional developer who truly knows his craft. Always punctual, writes clean code, and translates designs into functional, highly professional interfaces with ease. A tremendous asset to any software development team.",
     linkedin: "https://www.linkedin.com/in/ramez-khaled/",
     image: {
-      url: "/testimonial/ramez.jpeg",
+      url: "/testimonial/ramez.png",
       alt: "Ramez Khaled",
     },
   },
@@ -56,7 +56,7 @@ export const testimonials = [
       "التعامل مع أبو زيد مريح جداً وسلس. كـ Developer، فاهم هو بيعمل إيه كويس، وشغله نظيف ومضبوط بالمللي. بيحول أي تصميم لصفحات ويب سريعة وتفاعلية من غير أي مشاكل، والأهم إنه بيسلم في معاده بالظبط. من ألطف الناس اللي ممكن تشتغل معاهم في بروجيكت!",
     linkedin: "https://www.linkedin.com/in/ahmed-abdulazim-5a25672a6",
     image: {
-      url: "/testimonial/azeema.jpeg",
+      url: "/testimonial/azeema.png",
       alt: "Ahmed Abdelazeem",
     },
   },
@@ -70,7 +70,7 @@ export const testimonials = [
       "A highly skilled and creative Front-End Developer. He excels at understanding project vision, translating ideas into flawless user interfaces, and consistently delivering top-tier code on schedule. Truly an invaluable asset to any development team.",
     linkedin: "https://www.linkedin.com/in/mahmoud-tarek-18171b388/",
     image: {
-      url: "/testimonial/houda%20tarek.jpeg",
+      url: "/testimonial/houda%20tarek.png",
       alt: "Mahmoud Tarek",
     },
   },
