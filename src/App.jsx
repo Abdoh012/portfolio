@@ -3,6 +3,7 @@ import Hero from "./pages/Hero";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import Testimonials from "./pages/Testimonials";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
@@ -23,6 +24,8 @@ function App() {
         <Skills />
 
         <Projects />
+
+        <Testimonials />
 
         <PricingProvider>
           <Pricing />
