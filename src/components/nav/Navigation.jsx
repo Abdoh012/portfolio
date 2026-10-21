@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import MobileNavBar from "./MobileNavBar";
 import DesktopNavBar from "./DesktopNavBar";
+import { AnimatePresence } from "framer-motion";
 
 export default function Navigation() {
   const [showNav, setShowNav] = useState(false);
@@ -24,7 +25,7 @@ export default function Navigation() {
       <DesktopNavBar />
 
       {/* Small screens */}
-      <MobileNavBar show={showNav} />
+      <AnimatePresence>{showNav && <MobileNavBar />}</AnimatePresence>
     </>
   );
 }
